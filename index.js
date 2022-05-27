@@ -2,23 +2,19 @@
 import http from 'http';
 
 const server = http.createServer((req, res) => {
-    //request
-    // if(req.url != '/favicon.ico'){
-    //     console.log(req.url)
-    //     console.log(req.method)
-    // }
 
-
-    //response
-    // res.statusCode = 200;
-    // res.statusMessage = "pradeep";
-    //res.setHeader('Content-Type', 'text/plan');
-
-    //writeHead - it done all avobe in one go
     res.writeHead(200, "Status Message - Pradeep", { 'Conatent-Type': "text/plan" })
 
-
-    res.end("Response from server fu");
+    //request
+    if (req.url == '/') {
+        res.end("Home Page");
+    } else if (req.url == '/about') {
+        res.end("About Page");
+    } else if (req.url == '/login') {
+        res.end("Login Page");
+    }
+    console.log('------------');
+    console.log(req.url);
 
 })
 
