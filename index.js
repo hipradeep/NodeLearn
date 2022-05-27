@@ -1,23 +1,29 @@
+//import /export using common JS
 
-import http from 'http';
+// const nm=require("./src5/std.js");
 
-const server = http.createServer((req, res) => {
+//remove "type": "module", from package.json to use common js exprt import module 
 
-    res.writeHead(200, "Status Message - Pradeep", { 'Conatent-Type': "text/plan" })
+// console.log(nm);
 
-    //request
-    if (req.url == '/') {
-        res.end("Home Page");
-    } else if (req.url == '/about') {
-        res.end("About Page");
-    } else if (req.url == '/login') {
-        res.end("Login Page");
-    }
-    console.log('------------');
-    console.log(req.url);
+//import multiple module
+// const {name, marks}=require("./src5/std.js");
 
-})
+// console.log(name);
 
-server.listen(8000, 'localhost', () => {
-    console.log("Server runnng on http://localhost:8000");
-})
+// marks(30, 40);
+
+//-----------------------------
+//importing using ES6
+
+//importing single module
+// import name from "./src5/std.js";
+
+// console.log(name);
+
+//importing multiple module
+import {name, marks} from "./src5/std.js"
+
+console.log(name);
+
+marks(20, 30);
