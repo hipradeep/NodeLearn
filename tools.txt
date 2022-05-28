@@ -3,5 +3,10 @@
 git rm -r --cached --ignore-unmatch node_modules
 
 
-----------> index1
+---------- Install dependencies
+
+        > npm i express
+        > npm i nodemon
+        > npm install -D nodemon
+        > npm i ejs 
 	

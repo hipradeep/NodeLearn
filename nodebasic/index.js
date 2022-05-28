@@ -1,4 +1,4 @@
-//import /export using common JS
+//import export using common JS
 
 // const nm=require("./src5/std.js");
 
