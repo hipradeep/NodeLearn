@@ -20,7 +20,6 @@ const server = http.createServer((req, res) => {
     //find request method
     console.log(req.method);
 
- 
     //we can also handle the response accordind to url
     if (req.url == '/') res.end("Home");
     else if (req.url == '/about') res.end("About");
@@ -28,7 +27,7 @@ const server = http.createServer((req, res) => {
     else if (req.url == '/contact-us') res.end("Contact Us");
     else if (req.url == '/resume') res.end("Resume");
     else if (req.url == '/profile') res.end("Profile");
-    else res.end('Wrong End Url');
+    else res.end('404 Wrong End Url');
 
 })
 
