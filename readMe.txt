@@ -13,6 +13,5 @@ git rm -r --cached --ignore-unmatch node_modules
 
 --------------------Modules-----------------
 
-        1. httpModules  -> node .\_httpModules\index.js
-        2. 
-	
+        1. http  -> nodemon .\_httpModules\index.js
+        2. fs    -> nodemon .\_fsModules\index.js	
