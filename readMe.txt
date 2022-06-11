@@ -11,6 +11,8 @@ git rm -r --cached --ignore-unmatch node_modules
         > npm install -D nodemon
         > npm i ejs 
 
+ Remove :  "type":"module", from package.json for es6
+
 --------------------Modules-----------------
 
         1. http           -> nodemon .\_httpModules\index.js
