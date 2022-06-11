@@ -1,20 +1,14 @@
-import express from 'express';
-//const express = require('express')
+// NOTE: Using *WITHOUT* ES6
+// Remove :  "type":"module", from package.json
+
+const express = require('express')
 var app = express();
-import path from 'path';
-const __dirname = path.resolve(path.dirname('')); 
 
-app.get('/a', function (req, res) {
-   res.send('Hello World qqqq');
-})
 
-app.get('/', (req, res) => {
+app.get('/', function (req, res) {
   console.log(__dirname);
-  //  res.sendFile(path.join(__dirname ,'/','form.html'))
-  res.sendFile(__dirname + "/" + "./_formdata/src/form.html")
+  res.sendFile(__dirname + "/" + "./src/form.html")
 
-  //res.send("root page"+ __dirname)
-  //console.log("inside root function")
 })
 app.get('/admin', function (req, res) {
   res.send('Hello World Admin');
@@ -22,7 +16,6 @@ app.get('/admin', function (req, res) {
 app.get('/regpage', (req, res) => {
   res.send("welcome " + req.query.user + "  " + req.query.pass)
 })
-
 
 var server = app.listen(8081, function () {
   var host = server.address().address
