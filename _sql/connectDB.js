@@ -1,3 +1,5 @@
+//NOTE: Without ES6 
+
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
