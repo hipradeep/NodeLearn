@@ -6,7 +6,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 var conn = require('./connection');
 
-
 app.get('/', (req, res) => {
   console.log(req.url);
   res.send("Home")
