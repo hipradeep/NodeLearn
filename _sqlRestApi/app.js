@@ -78,7 +78,7 @@ app.delete('/students/del/:id', (req, res) => {
 
 //update data in student tables, city using id
 app.put('/students/update', (req, res) => {
-  conn.query("update  students set ?  where id=?", [req.body.city, req.body.id], (err, result) => {
+  conn.query("update  students set city=?  where id=?", [req.body.city, req.body.id], (err, result) => {
     if (err) throw err
     else
       res.send(result)
