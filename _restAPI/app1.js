@@ -6,6 +6,24 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 
+
+/*
+//without bodyParser, dont change anything just uncommet
+
+app.use((req, res, next)=>{
+  var data = "";
+  req.on('data', (chunk)=>{ data += chunk})
+  req.on('end', ()=>{
+      req.rawBody = data;
+      if ( data && data.indexOf( '{' ) > -1 ) {
+        req.body = JSON.parse( data );
+      }
+      next();
+  })
+})
+
+*/
+
 app.get('/', (req, res) => {
   console.log(req.url);
   res.send("Home")
