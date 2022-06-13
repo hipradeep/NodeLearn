@@ -11,6 +11,8 @@ app.get('/', (req, res) => {
   res.send("Home")
 })
 
+//GET
+
 //getting single req params at root url
 
 // app.get('/:username', (req, res) => {
@@ -69,12 +71,13 @@ app.get('/reposts/:userId/:parentId', (req, res) => {
 
 //POST requests
 
-// app.post('/', (req, res) => {
-//   // console.log(req.params.id);
-
-//   //res.send("Id : "+req.params.id + " name : "+ req.params.name)
-//   res.send(req.body)
-// })
+app.post('/register', (req, res) => {
+    console.log(req.body);
+    console.log(req.body.mobile);
+    console.log(req.body.name);
+    console.log(req.body.dob);
+  res.send(req.body)
+})
 
 
 
