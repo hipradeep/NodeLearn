@@ -15,9 +15,9 @@ app.get('/', (req, res) => {
     });
   })
 
-  app.get('/user/:name', (req, res) => {
-    var sql = "select * FROM students where name=?";
-    conn.query(sql,[req.params.name], function (err, result) {
+  app.get('/user/:id', (req, res) => {
+    var sql = "select * FROM students where id=?";
+    conn.query(sql,[req.params.id], function (err, result) {
         if (err) throw err;
         console.log(result); 
         res.send(result);
