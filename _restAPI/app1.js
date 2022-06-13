@@ -30,8 +30,14 @@ app.get('/user/:id/:name', (req, res) => {
   res.send("Id : "+req.params.id + " name : "+ req.params.name)
 })
 
+app.get('/user/:id/:name', (req, res) => {
+  console.log(req.params.id);
+  console.log(req.params.name);
+  res.send("Id : "+req.params.id + " name : "+ req.params.name)
+})
 
-app.get('/useer/:id/', (req, res) => {
+
+app.get('/', (req, res) => {
   // console.log(req.params.id);
 
   //res.send("Id : "+req.params.id + " name : "+ req.params.name)
