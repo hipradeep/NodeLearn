@@ -1,3 +1,6 @@
+:: to run files
+node app.js
+
 
 ::To ignore node_modules form push to server 
 git rm -r --cached --ignore-unmatch node_modules
