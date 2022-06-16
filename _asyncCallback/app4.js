@@ -35,8 +35,6 @@ myRocket("🚀 🚀 🚀", (rkt) => {
         console.log(cars);
         getBike(cars, (bike) => console.log(bike));
     });
-
 });
-
 
 console.log("end"); 
