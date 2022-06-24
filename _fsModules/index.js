@@ -1,7 +1,6 @@
 import http from 'http';
 import fs from 'fs'
 
-
 const server = http.createServer((req, res) => {
 
     if (req.url == '/' || req.url == '/home.html') {
@@ -24,8 +23,6 @@ const server = http.createServer((req, res) => {
             res.end();
         });
     }
-
-
 })
 
 const PORT = 8080;

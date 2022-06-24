@@ -25,3 +25,6 @@ git rm -r --cached --ignore-unmatch node_modules
         4. sql            -> \_sql> node .\connectDB.js OR
                           -> node .\_sql\connectDB.js
                           
+
+------------------SortCut--------------------
+cgl - console.log()
