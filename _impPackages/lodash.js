@@ -10,3 +10,6 @@ const _ =require('lodash')
   greet();
   greet();
   greet();
+
+  //for more
+  //https://lodash.com/docs/4.17.15
