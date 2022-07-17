@@ -55,6 +55,7 @@ app.get('/user/:id/:name', (req, res) => {
 
 
 //getting single req query at end like url
+////http://localhost:8081/likes?userId=45
 app.get('/likes', (req, res) => {
   console.log(req.query.userId);
   console.log(req.url);

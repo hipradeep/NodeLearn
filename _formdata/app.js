@@ -8,8 +8,8 @@ var app = express();
 app.get('/', function (req, res) {
   console.log(__dirname);
   res.sendFile(__dirname + "/" + "./src/form.html")
-
 })
+
 app.get('/admin', function (req, res) {
   res.send('Hello World Admin');
 })
